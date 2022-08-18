@@ -35,6 +35,17 @@ echo "Тип переменной userAge = $userAgeType" . ";" . PHP_EOL;
 
 echo "_______________________" . PHP_EOL;
 
+/* тестируем print */
+print "Вас зовут $userName, вам $userAge лет" . PHP_EOL;
+/* Вас зовут Павел, вам 20 лет */
+
+echo "_______________________" . PHP_EOL;
+
+$userTask1 = readline("Какая 1 задача стоит перед вами сегодня? ");
+
+
+
+
 
 
 
