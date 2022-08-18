@@ -13,9 +13,33 @@
 - Полежать на диване (4ч)
 Примерное время выполнения плана = 7ч */
 
-/* Задание 2 */
+/* ================= Задание 2 ================= */
 
 $userName = readline("Введите ваше имя: ");
+$userAge = readline("Сколько вам лет? : ") . PHP_EOL;
+
+// (int) - приведение типа к целому числу
+$userAge = (int)$userAge;
+
+echo "_______________________" . PHP_EOL;
+
+// Функция readline() - возвращает одиночную строчку от пользователя
+// (string) - приведение типа к строке (string)
+
+// gettype — Возвращает тип переменной
+$userNameType = gettype($userName);
+$userAgeType = gettype($userAge);
+
+echo "Тип переменной userName = $userNameType" . ";" . PHP_EOL; /* PHP_EOL - кроссплатформенный перенос текста */
+echo "Тип переменной userAge = $userAgeType" . ";" . PHP_EOL;
+
+echo "_______________________" . PHP_EOL;
+
+
+
+
+
+
 
 
 
