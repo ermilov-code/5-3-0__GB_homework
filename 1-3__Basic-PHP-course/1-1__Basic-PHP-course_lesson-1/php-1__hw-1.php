@@ -68,10 +68,10 @@ echo "_______________________" . PHP_EOL;
 
 echo "
 $userName, сегодня у вас запланировано 3 приоритетных задачи на день:
-- $task1 ($time1task.ч)
-- $task2 ($time2task.ч)
-- $task3 ($time3task.ч)
-Примерное время выполнения плана = $totalTaskTime.ч
+- $task1 ($time1task ч)
+- $task2 ($time2task ч)
+- $task3 ($time3task ч)
+Примерное время выполнения плана = $totalTaskTime ч
 ";
 
 
