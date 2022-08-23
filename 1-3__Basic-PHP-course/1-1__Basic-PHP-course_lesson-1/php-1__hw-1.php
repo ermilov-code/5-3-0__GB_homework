@@ -57,6 +57,7 @@ $totalTaskTime = $time1task + $time2task + $time3task;
 echo "_______________________" . PHP_EOL;
 
 $task1Type = gettype($task1);
+// $task1Type = var_dump($task1);
 $time1taskType = gettype($time1task);
 
 echo "Тип переменной task1 = $task1Type" . ";" . PHP_EOL; 
