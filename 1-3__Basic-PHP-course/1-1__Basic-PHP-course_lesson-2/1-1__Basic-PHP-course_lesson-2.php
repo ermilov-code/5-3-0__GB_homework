@@ -21,7 +21,7 @@ echo "
 3) Переяславль
 ";
 $answerFirstTask = (int)readline("Ваш ответ: ") . PHP_EOL;
-/* Киев */  
+/* Киев */
 
 $rightCity = "Киев";
 
@@ -30,11 +30,37 @@ $rightCity = "Киев";
 //     echo "Это правильный ответ! Спасибо за игру)" . PHP_EOL;
 // }
 
-if ($answerFirstTask == 1) {
-    echo "{$rightCity} - это правильный ответ! Спасибо за игру)" . PHP_EOL;
-}
+/* Первый вариант: ====================== */
+// if ($answerFirstTask == 2) {
+//     echo "{$rightCity} - это правильный ответ! Спасибо за игру)" . PHP_EOL;
+// } elseif ($answerFirstTask == 1 || $answerFirstTask == 3) {
+//     echo "Это неправильный ответ! Правильный ответ - {$rightCity}!" . PHP_EOL;
+// } else {
+//     echo "
+//         Какой город стал столицей Древнерусского государства?
+//         1) Новгород
+//         2) Киев
+//         3) Переяславль
+//         ";
+//     $answerFirstTask = (int)readline("Ваш ответ: ") . PHP_EOL;
+// }
 
-// echo $task1 . PHP_EOL;
+/* Второй вариант: ====================== */
+// if ($answerFirstTask == 2) {
+//     echo "{$rightCity} - это правильный ответ! Спасибо за игру)" . PHP_EOL;
+// } elseif ($answerFirstTask == 1 || $answerFirstTask == 3) {
+//     echo "Это неправильный ответ! Правильный ответ - {$rightCity}!" . PHP_EOL;
+// } else {
+//     echo "
+//         Какой город стал столицей Древнерусского государства?
+//         1) Новгород
+//         2) Киев
+//         3) Переяславль
+//         ";
+//     $answerFirstTask = (int)readline("Ваш ответ: ") . PHP_EOL;
+// }
+
+
 
 echo "_______________________" . PHP_EOL;
 
