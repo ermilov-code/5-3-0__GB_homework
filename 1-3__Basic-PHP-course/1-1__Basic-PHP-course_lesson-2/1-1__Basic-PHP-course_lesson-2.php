@@ -70,20 +70,12 @@
 
 
 $userName = readline("Введите ваше имя: ");
-$userAge = (int)readline("Сколько вам лет? : ") . PHP_EOL;
+$userAge = (int)readline("Сколько вам лет? : ");
 
 echo "_______________________" . PHP_EOL;
 
-$userNameType = gettype($userName);
-$userAgeType = gettype($userAge);
-/* 
-Тип переменной userName = string;
-Тип переменной userAge = string;
-ПОЧЕМУ ВЫВОДИТСЯ ТИП string у userAge ??
-*/
-
-echo "Тип переменной userName = $userNameType" . ";" . PHP_EOL;
-echo "Тип переменной userAge = $userAgeType" . ";" . PHP_EOL;
+echo "Тип переменной userName = " . gettype($userName) . ";" . PHP_EOL;
+echo "Тип переменной userAge = " . gettype($userAge) . ";" . PHP_EOL;
 
 echo "_______________________" . PHP_EOL;
 
@@ -93,7 +85,7 @@ if (($numberOfTasks >= 1) && ($numberOfTasks <= 5)) {
     $task1 = readline("Какая 1 задача стоит перед вами сегодня? ");
     $time1task = (int)readline("Сколько примерно времени эта задача займет? ");
 } else {
-    echo "У вас слишком много задач" . PHP_EOL;
+    echo "Так нельзя!" . PHP_EOL;
 }
 
 // $task1 = readline("Какая 1 задача стоит перед вами сегодня? ");
