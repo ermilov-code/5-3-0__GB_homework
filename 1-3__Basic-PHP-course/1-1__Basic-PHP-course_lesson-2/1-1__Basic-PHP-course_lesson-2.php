@@ -81,9 +81,29 @@ echo "_______________________" . PHP_EOL;
 
 $numberOfTasks = (int)readline("Сколько задач вы запланировали сегодня? ");
 
+// ПЕРЕМЕННЫЕ ПЕРЕМЕННЫХ - не понял тему!
+
 if (($numberOfTasks >= 1) && ($numberOfTasks <= 5)) {
-    $task1 = readline("Какая 1 задача стоит перед вами сегодня? ");
-    $time1task = (int)readline("Сколько примерно времени эта задача займет? ");
+    for ($i = 1; $i <= $numberOfTasks; $i++) {
+        ${"taskName$i"} = readline("Какая {$i} задача стоит перед вами сегодня? ");
+        ${"taskTime$i"} = (int)readline("Сколько примерно времени эта задача займет? ");
+    }
+
+    echo "_______________________" . PHP_EOL;
+
+    echo "$userName, сегодня у вас запланировано $numberOfTasks приоритетных задачи на день: " . PHP_EOL;
+
+    for ($i = 1; $i <= $numberOfTasks; $i++) {
+        echo "- ${"taskName$i"} ${"taskTime$i"}" . PHP_EOL;
+        // echo ${"taskTime$i"};
+    }
+
+
+    // - $task1 ({$time1task}ч)
+    // - $task2 ({$time2task}ч)
+    // - $task3 ({$time3task}ч)
+    // Примерное время выполнения плана = {$totalTaskTime}ч
+    // ";
 } else {
     echo "Так нельзя!" . PHP_EOL;
 }
