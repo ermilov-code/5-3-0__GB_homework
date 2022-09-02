@@ -40,24 +40,24 @@
 // echo "_______________________" . PHP_EOL;
 
 /* ВТОРОЙ ВАРИАНТ: ______________________________________________ */
-// $rightCity = "Киев";
-// do {
-//     echo "
-//         Какой город стал столицей Древнерусского государства?
-//         1) Новгород
-//         2) Киев
-//         3) Переяславль
-//         ";
-//     $answerFirstTask = (int)readline("Ваш ответ: ");
-//     if (($answerFirstTask === 3) || ($answerFirstTask === 1)) {
-//         echo "Это неправильный ответ :( - Правильный ответ: 2 - {$rightCity}!" . PHP_EOL;
-//         break;
-//     }
-// } while ($answerFirstTask !== 2);
+$rightCity = "Киев";
+do {
+    echo "
+        Какой город стал столицей Древнерусского государства?
+        1) Новгород
+        2) Киев
+        3) Переяславль
+        ";
+    $answerFirstTask = (int)readline("Ваш ответ: ");
+    if (($answerFirstTask === 3) || ($answerFirstTask === 1)) {
+        echo "Это неправильный ответ :( - Правильный ответ: 2 - {$rightCity}!" . PHP_EOL;
+        break;
+    }
+} while ($answerFirstTask !== 2);
 
-// if ($answerFirstTask === 2) {
-//     echo "{$rightCity} - это правильный ответ! Спасибо за игру)" . PHP_EOL;
-// }
+if ($answerFirstTask === 2) {
+    echo "{$rightCity} - это правильный ответ! Спасибо за игру)" . PHP_EOL;
+}
 
 // echo "_______________________" . PHP_EOL;
 
