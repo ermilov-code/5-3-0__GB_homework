@@ -15,17 +15,16 @@ $arr2 = range(0, 9);
 shuffle($arr1); /* shuffle — Перемешивает массив */
 shuffle($arr2);
 
-foreach ($arr1 as $value1) {
-    echo ($value1); // 0741682539
-};
+// foreach ($arr1 as $value1) {
+//     echo ($value1); // 0741682539
+// };
 
-echo "<br>";
+// foreach ($arr2 as $value2) {
+//     echo ($value2); // 7653184092
+// };
 
-foreach ($arr2 as $value2) {
-    echo ($value2); // 7653184092
-};
-
-echo "<br>";
+print_r($arr1);
+print_r($arr2);
 
 $newArray = [];
 
