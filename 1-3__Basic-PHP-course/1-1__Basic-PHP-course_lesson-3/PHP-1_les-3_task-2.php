@@ -15,4 +15,21 @@ $userName = readline("Введите ваше имя: ");
 /* implode — Объединяет элементы массива в строку */
 /* shuffle — Перемешивает массив */
 
-echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю космического терпения, бесконечного здоровья и безудержного воображения!»";
+// $wish1 = [];
+// $wish2 = [];
+// $wish3 = [];
+
+$finalWishes = [];
+
+for ($i = 1; $i <= count($arrayWishes); $i++) {
+
+    // переменная с первым рандомным пожеланием 
+    
+    // переменная со вторым рандомным пожеланием
+
+    $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
+};
+
+print_r($finalWishes);
+
+echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю {$finalWishes[0]}, {$finalWishes[1]} и {$finalWishes[2]}!»";
