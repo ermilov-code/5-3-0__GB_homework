@@ -24,12 +24,27 @@ $finalWishes = [];
 for ($i = 1; $i <= count($arrayWishes); $i++) {
 
     // переменная с первым рандомным пожеланием 
-    
+
+    if (isset($finalWishes[$arrayWishes[array_rand($arrayWishes, 1)]]) == false) {
+    }
     // переменная со вторым рандомным пожеланием
 
     $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
+    
 };
 
-print_r($finalWishes);
 
-echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю {$finalWishes[0]}, {$finalWishes[1]} и {$finalWishes[2]}!»";
+
+
+// =====================================================
+
+// for ($i = 1; $i <= count($arrayWishes); $i++) {
+//     $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
+// };
+
+// print_r($finalWishes);
+
+// echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю {$finalWishes[0]}, {$finalWishes[1]} и {$finalWishes[2]}!»";
+// /* «Дорогой Павел, от всего сердца поздравляю тебя с днем рождения, желаю богатства огромного, здоровья крепкого и счастья огромного!» */
+
+// =====================================================
