@@ -23,14 +23,17 @@ $finalWishes = [];
 
 for ($i = 1; $i <= count($arrayWishes); $i++) {
 
-    // берем случайный ключ Wishes
+    // берем случайный ключ из наших массивов слов
     $randomKeyWishes = $arrayWishes[array_rand($arrayWishes, 1)];
-    // берем случайный ключ Wishes
     $randomKeyEpithets = $arrayEpithets[array_rand($arrayEpithets, 1)];
 
-    // помещаем в массив $wish1 первое слово из Wishes
+    // помещаем в массив $finalWishes первое слово из array
     $finalWishes[] = $randomKeyWishes;
     $finalWishes[] = $randomKeyEpithets;
+
+    // удаляем из исходного массива слово, которое уже использовали
+    unset($arrayWishes[$randomKeyWishes]);
+    unset($arrayEpithets[$randomKeyEpithets]);
 
 
 
