@@ -15,23 +15,36 @@ $userName = readline("Введите ваше имя: ");
 /* implode — Объединяет элементы массива в строку */
 /* shuffle — Перемешивает массив */
 
-// $wish1 = [];
-// $wish2 = [];
-// $wish3 = [];
+$wish1 = [];
+$wish2 = [];
+$wish3 = [];
 
 $finalWishes = [];
 
 for ($i = 1; $i <= count($arrayWishes); $i++) {
 
-    // переменная с первым рандомным пожеланием 
+    // берем случайный ключ Wishes
+    $randomKeyWishes = $arrayWishes[array_rand($arrayWishes, 1)];
+    // берем случайный ключ Wishes
+    $randomKeyEpithets = $arrayEpithets[array_rand($arrayEpithets, 1)];
 
-    if (isset($finalWishes[$arrayWishes[array_rand($arrayWishes, 1)]]) == false) {
-    }
-    // переменная со вторым рандомным пожеланием
+    // помещаем в массив $wish1 первое слово из Wishes
+    $finalWishes[] = $randomKeyWishes;
+    $finalWishes[] = $randomKeyEpithets;
 
-    $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
-    
+
+
+
+
+
+    // // переменная с первым рандомным пожеланием 
+    // if (isset($finalWishes[$arrayWishes[array_rand($arrayWishes, 1)]]) == false) {
+    // }
+    // // переменная со вторым рандомным пожеланием
+    // $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
 };
+
+var_dump($finalWishes);
 
 
 
