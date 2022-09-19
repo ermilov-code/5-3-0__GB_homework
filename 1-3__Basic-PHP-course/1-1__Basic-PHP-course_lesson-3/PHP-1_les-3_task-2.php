@@ -27,9 +27,12 @@ for ($i = 1; $i <= count($arrayWishes); $i++) {
     $randomKeyWishes = $arrayWishes[array_rand($arrayWishes, 1)];
     $randomKeyEpithets = $arrayEpithets[array_rand($arrayEpithets, 1)];
 
+    var_dump($randomKeyWishes);
+    var_dump($randomKeyEpithets);
+
     // помещаем в массив $finalWishes первое слово из array
-    $finalWishes[] = $randomKeyWishes;
-    $finalWishes[] = $randomKeyEpithets;
+    $finalWishes[] = $arrayWishes[$randomKeyWishes];
+    $finalWishes[] = $arrayEpithets[$randomKeyEpithets];
 
     // удаляем из исходного массива слово, которое уже использовали
     unset($arrayWishes[$randomKeyWishes]);
