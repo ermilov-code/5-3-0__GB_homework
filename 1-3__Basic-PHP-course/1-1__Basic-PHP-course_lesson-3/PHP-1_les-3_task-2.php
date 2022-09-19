@@ -21,14 +21,11 @@ $wish3 = [];
 
 $finalWishes = [];
 
-for ($i = 1; $i <= count($arrayWishes); $i++) {
+for ($i = -1; $i <= count($arrayWishes); $i++) {
 
     // берем случайный ключ из наших массивов слов
-    $randomKeyWishes = $arrayWishes[array_rand($arrayWishes, 1)];
-    $randomKeyEpithets = $arrayEpithets[array_rand($arrayEpithets, 1)];
-
-    var_dump($randomKeyWishes);
-    var_dump($randomKeyEpithets);
+    $randomKeyWishes = array_rand($arrayWishes, 1);
+    $randomKeyEpithets = array_rand($arrayEpithets, 1);
 
     // помещаем в массив $finalWishes первое слово из array
     $finalWishes[] = $arrayWishes[$randomKeyWishes];
@@ -37,33 +34,10 @@ for ($i = 1; $i <= count($arrayWishes); $i++) {
     // удаляем из исходного массива слово, которое уже использовали
     unset($arrayWishes[$randomKeyWishes]);
     unset($arrayEpithets[$randomKeyEpithets]);
-
-
-
-
-
-
-    // // переменная с первым рандомным пожеланием 
-    // if (isset($finalWishes[$arrayWishes[array_rand($arrayWishes, 1)]]) == false) {
-    // }
-    // // переменная со вторым рандомным пожеланием
-    // $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
 };
 
-var_dump($finalWishes);
+echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю {$finalWishes[0]} {$finalWishes[1]}, {$finalWishes[2]} {$finalWishes[3]} и {$finalWishes[4]} {$finalWishes[5]}!»";
+// /* «Дорогой Павел, от всего сердца поздравляю тебя с днем рождения, желаю здоровья крепкого, счастья огромного и богатства бесконечного!» */
 
-
-
-
-// =====================================================
-
-// for ($i = 1; $i <= count($arrayWishes); $i++) {
-//     $finalWishes[] = "{$arrayWishes[array_rand($arrayWishes, 1)]} {$arrayEpithets[array_rand($arrayEpithets, 1)]}";
-// };
-
-// print_r($finalWishes);
-
-// echo "«Дорогой $userName, от всего сердца поздравляю тебя с днем рождения, желаю {$finalWishes[0]}, {$finalWishes[1]} и {$finalWishes[2]}!»";
-// /* «Дорогой Павел, от всего сердца поздравляю тебя с днем рождения, желаю богатства огромного, здоровья крепкого и счастья огромного!» */
 
 // =====================================================
