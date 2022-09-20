@@ -10,4 +10,16 @@ for ($i = 0; $i < 100; $i++) {
 
     // rand — Генерирует случайное число
     $randomValue = rand(1, 200);
+
+    // key() возвращает индекс текущего элемента массива
+    $keyArrayElement = key($randomValue);
+
+    // если в массиве arrayElements уже есть элемент randomValue
+    if (array_key_exists($keyArrayElement, $arrayElements)) {
+        echo "hello";
+    };
+
+    $arrayElements[] = $randomValue;
 };
+
+print_r($arrayElements);
