@@ -50,7 +50,7 @@ for ($i = 1; $i <= $wishLimit; $i++) {
     $wishChosen[] = $epithets[array_rand($epithets) . " " . $wishes[array_rand($wishes)]];
 }
 
-$lastWish = array_pop($wishChoosen);
+$lastWish = array_pop($wishChosen);
 
 $congratulationText = " Дорогой $name, от всего сердца поздравляю тебя с днем рождения, желаю " . implode(',', $wishChosen) . " и " . $lastWish;
 
