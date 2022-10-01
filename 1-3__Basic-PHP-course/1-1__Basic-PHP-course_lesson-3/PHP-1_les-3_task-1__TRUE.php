@@ -8,12 +8,34 @@ $multiple = [];
 //     $multiplate[] = $arr[$i] * $arr2[$i];
 // }
 
-foreach ($arr1 as $key => $value) {
-    $multiplate[] = $arr1[$key] * $arr2[$key];
-}
+// foreach ($arr1 as $key => $value) {
+//     $multiplate[] = $arr1[$key] * $arr2[$key];
+// }
 
-print_r($multiplate);
+// print_r($multiplate);
 
 // еще вариант:
 
-$
+$multiple = array_map(
+    function ($a, $b) {
+        return $a * $b;
+    },
+    $arr1,
+    $arr2
+);
+
+print_r($multiple);
+
+// Array
+// (
+//     [0] => 1
+//     [1] => 4
+//     [2] => 9
+//     [3] => 16
+//     [4] => 25
+//     [5] => 36
+//     [6] => 49
+//     [7] => 64
+//     [8] => 81
+//     [9] => 100
+// )
